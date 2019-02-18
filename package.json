@@ -1,0 +1,11 @@
+{
+  "name": "git-m",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "bin": {
+    "git-m": "./bin/git-m"
+  },
+  "author": "",
+  "license": "ISC"
+}
