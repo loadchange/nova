@@ -1,11 +1,11 @@
 {
-  "name": "git-m",
+  "name": "gitlog-m",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "bin": {
-    "git-m": "./bin/git-m"
+    "gitlog-m": "./bin/gitlog-m"
   },
-  "author": "",
-  "license": "ISC"
+  "author": "soocto@gmail.com",
+  "license": "MIT"
 }
