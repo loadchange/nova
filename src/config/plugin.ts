@@ -1,4 +1,5 @@
-import { EggPlugin } from 'midway';
+import {EggPlugin} from 'midway';
+
 export default {
-  static: true, // default is true
+    static: true, // default is true
 } as EggPlugin;
