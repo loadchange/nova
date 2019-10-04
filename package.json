@@ -1,24 +1,25 @@
 {
-  "name": "my_first_midway_project",
+  "name": "Nova",
   "version": "1.0.0",
-  "description": "{{description}}",
+  "description": "Nova",
   "private": true,
   "dependencies": {
-    "midway": "^1.0.0",
-    "egg-scripts": "^2.10.0"
+    "apollo-server-koa": "^2.10.1",
+    "egg-scripts": "^2.10.0",
+    "midway": "^1.17.1"
   },
   "devDependencies": {
-    "@types/mocha": "^5.2.7",
-    "@types/node": "^10.5.5",
-    "cross-env": "^6.0.0",
-    "egg-ci": "^1.8.0",
-    "midway-bin": "1",
-    "midway-mock": "1",
-    "tslib": "^1.8.1",
-    "tslint-midway-contrib": "1",
-    "ts-node": "^8.3.0",
-    "tslint": "^5.11.0",
-    "typescript": "^3.5.0"
+    "@types/mocha": "^7.0.1",
+    "@types/node": "^13.7.4",
+    "cross-env": "^7.0.0",
+    "egg-ci": "^1.13.1",
+    "midway-bin": "1.17.1",
+    "midway-mock": "1.17.1",
+    "tslib": "^1.11.0",
+    "tslint-midway-contrib": "1.16.3",
+    "ts-node": "^8.6.2",
+    "tslint": "^5.20.1",
+    "typescript": "^3.8.2"
   },
   "engines": {
     "node": ">=10.16.0"
@@ -40,13 +41,12 @@
     "version": "10"
   },
   "midway-bin-clean": [
-    ".vscode/.tsbuildinfo",
     "dist"
   ],
   "repository": {
     "type": "git",
-    "url": ""
+    "url": "git+https://github.com/loadchange/nova.git"
   },
-  "author": "anonymous",
+  "author": "LoadChange",
   "license": "MIT"
 }

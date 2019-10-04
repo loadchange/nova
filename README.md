@@ -1,6 +1,6 @@
-# my_first_midway_project
+# Nova
 
-{{description}}
+Nova
 
 ## QuickStart
 
