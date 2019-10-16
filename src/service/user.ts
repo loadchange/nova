@@ -6,7 +6,7 @@ export class UserService implements IUserService {
 
   async getUser(options: IUserOptions): Promise<IUserResult> {
     return {
-      id: options.id,
+      id: options.id + 100,
       username: 'mockedName',
       phone: '12345678901',
       email: 'xxx.xxx@xxx.com',
