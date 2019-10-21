@@ -1,4 +1,15 @@
+import 'ignore-styles';
+import babelRegister from '@babel/register';
+import * as React from 'react';
+import * as ReactDomServer from 'react-dom/server';
+import App from '../../../web/App';
+
 import { Context, inject, controller, get, provide } from 'midway';
+
+babelRegister({
+  ignore: [ /(node_module)/ ],
+  presets: [ '@babel/preset-env', '@babel/preset-react' ]
+});
 
 @provide()
 @controller('/')
@@ -8,12 +19,12 @@ export class HomeController {
   ctx: Context;
 
   @get('/')
-  async index() {
-    this.ctx.body = `Welcome to midwayjs!`;
-  }
-
-  @get('/test')
-  async index2() {
-    this.ctx.body = `Welcome to midwayjs test!`;
+  async index(ctx) {
+    const html = await ctx.renderView('index.html');
+    const rootHtml = ReactDomServer.renderToString(React.createElement(App));
+    ctx.body = html.replace(
+      '<div id="root"></div>',
+      `<div id="root">${ rootHtml }</div>`
+    );
   }
 }
