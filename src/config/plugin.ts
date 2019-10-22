@@ -1,5 +1,10 @@
-import {EggPlugin} from 'midway';
+import { EggPlugin } from 'midway';
 
 export default {
-    static: true, // default is true
+  static: true,
+  view: true,
+  nunjucks: {
+    enable: true,
+    package: 'egg-view-nunjucks',
+  }
 } as EggPlugin;
