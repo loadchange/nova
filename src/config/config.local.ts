@@ -10,3 +10,5 @@ export const development = {
   ],
   overrideDefault: true,
 };
+
+export const middleware = [ 'graphql', 'webpack' ];
